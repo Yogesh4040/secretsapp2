@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" id="regPassword" placeholder="Password" required />
+      <label><input type="checkbox" onclick="togglePassword('regPassword')"> Show Password</label>
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="/login.html">Login</a></p>
+    </form>
+    <div id="registerMsg"></div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to your secret dashboard! 🔒</h2>
+    <button id="logoutBtn">Logout</button>
+  </div>
+  <script>
+    document.getElementById("logoutBtn").onclick = async () => {
+      await fetch("/auth/logout", { method: "POST" });
+      window.location.href = "/login.html";
+    };
+  </script>
+</body>
+</html>
